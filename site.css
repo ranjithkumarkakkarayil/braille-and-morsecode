@@ -1,0 +1,105 @@
+body {
+	font-size: 12px;
+	background-color: #0099FF;
+}
+
+.container {
+	background-color: white;
+	min-height: 100vh;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 0em;
+	border-radius: 5px;
+}
+
+.menu {
+	border-bottom:1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+	margin-bottom: 1em;
+	padding-top:1em;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.page_header {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:16px;
+}
+
+.boxeffect {
+	background-color:#F8F9F9;
+	border-radius: 5px;
+	padding:2em;
+	height: auto;
+}
+
+.header {
+	font-weight:bold;
+	font-size:16px;
+	text-transform:uppercase;
+	text-align:center;
+	color:#0099FF;
+}
+
+.sub_header {
+	font-weight:bold;
+	font-size:14px;
+	text-transform:uppercase;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+    padding  : .6rem .6rem;
+    font-size  : .8rem;
+    line-height  : .5;
+    border-radius : .2rem;
+}
+
+input[type="text"] {
+	font-size: 12px !important;
+}
+
+.info {
+	padding:1em;
+}
+
+.info p:first-child {
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.braille_op {
+	padding:2em;
+}
+
+.braille {
+	float:left;
+	background-color:#D6EAF8;
+	margin:2px;
+}
+
+.br_select:hover {
+	cursor:pointer;
+}
+
+.br_setup {
+	border:1px solid #ccc;
+	padding:10px;
+	margin-bottom:5px;
+	border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

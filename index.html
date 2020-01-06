@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="site.css" />
+
+    <title>Translators</title>
+  </head>
+  <body style="font-family: 'Cabin', sans-serif;">
+	
+	<div class="container">
+		<div class="menu">
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+			  	<li class="nav-item">
+			  	  	<a class="nav-link btn-xs" id="pills-morsecode-tab" data-toggle="pill" href="#pills-morsecode" role="tab" aria-controls="pills-morsecode" aria-selected="true">Morse code</a>
+			  	</li>
+			  	<li class="nav-item">
+			  	  	<a class="nav-link active btn-xs" id="pills-braille-tab" data-toggle="pill" href="#pills-braille" role="tab" aria-controls="pills-braille" aria-selected="false">Braille</a>
+			  	</li>
+			</ul>
+		</div>
+		<div class="tab-content" id="pills-tabContent">
+		  	<div class="tab-pane fade" id="pills-morsecode" role="tabpanel" aria-labelledby="pills-morsecode-tab">
+				<p class="header">Morse code translator</p>
+			
+				<div class="boxeffect">
+					<p class="sub_header">Convert text to morse code</p>
+					<input type="text" class="form-control mc_text" placeholder="Enter text to convert to morse code" />
+					<br/>
+					<p>Morse code output : </p>
+					<p><span class="mc_output_code"> - enter text - </span></p>
+				</div>
+				
+				<br/>
+				
+				<div class="boxeffect">
+					<p class="sub_header">Convert morse code to text</p>
+					<input type="text" class="form-control mc_code" placeholder="Enter morse code to convert to text" />
+					<br/>
+					<p>Text output : </p>
+					<p><span class="mc_output_text"> - enter morse code - </span></p>
+				</div>
+				
+				<br />
+				
+				<div class="info">
+					<p>Information : </p>
+					<p>
+						Morse code is a character encoding scheme used in telecommunication that encodes text characters as standardized sequences of two different signal durations 
+						called dots and dashes or dits and dahs. Morse code is named for Samuel F. B. Morse, an inventor of the telegraph.
+					</p>
+					<p><a href="https://en.wikipedia.org/wiki/Morse_code" target="_blank">Know more about morse code</a></p>
+				</div>
+				
+				
+			</div>
+		  	<div class="tab-pane fade show active" id="pills-braille" role="tabpanel" aria-labelledby="pills-braille-tab">
+				<p class="header">Unified English Braille (UEB) Code converter</p>
+				
+				<div class="boxeffect">
+					<p class="sub_header">Convert text to braille</p>
+					<input type="text" class="form-control braille_text" placeholder="Enter text to convert to braille language" />
+				</div>
+				
+				<div class="braille_op row">
+					<p>Braille output : </p>
+					<p><div id="br_output_code"></div></p>
+				</div>
+				<hr />
+				
+				<div class="boxeffect">
+					<p class="sub_header">Convert braille to text</p>
+					<p>Select each braille text to form a word/sentence.</p>
+					<div class="row">
+						<div class="col-md-2">
+							<div class="br_setup">
+								<input type="radio" name="txtnum" id="rdb_txt" value="text" checked="checked" /> Text <br/>
+								<input type="radio" name="txtnum" id="rdb_num" value="number" /> Number
+							</div>
+							<div class="br_setup">
+								<input type="checkbox" id="chk_uppercase" value="uppercase" /> Caps
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div id="br_container"></div>
+						</div>
+						<div class="col-md-3"><span id="br_text"></span></div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="info">
+					<p>Information : </p>
+					<p>
+						Braille is a tactile writing system used by people who are visually impaired. It is traditionally written with embossed paper. 
+						Braille users can read computer screens and other electronic supports using refreshable braille displays. They can write braille with the original slate and 
+						stylus or type it on a braille writer, such as a portable braille notetaker or computer that prints with a braille embosser.
+					</p>
+					<p><a href="https://en.wikipedia.org/wiki/Braille" target="_blank">Know more about braille</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="morsecode.js"></script>
+	<script type="text/javascript" src="english_braille.js"></script>
+	
+  </body>
+</html>
